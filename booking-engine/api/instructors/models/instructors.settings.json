@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "instructors",
+  "info": {
+    "name": "Instructors"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 32,
+      "unique": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 32
+    },
+    "BioBullets": {
+      "type": "text",
+      "maxLength": 400
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Password": {
+      "type": "password"
+    },
+    "Instagram": {
+      "type": "string",
+      "default": "InstagramUserName",
+      "maxLength": 31
+    },
+    "FullBiography": {
+      "type": "text",
+      "maxLength": 2000
+    }
+  }
+}
